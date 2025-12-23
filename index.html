@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Your Interior Design Style for 2026</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title Page -->
+      <div class="title-page active">
+        <h1 class="main-title">Discover Your Interior Design Style for 2026</h1>
+        <p class="main-subtitle">Answer 8 questions to reveal your unique design personality.</p>
+        <button class="start-btn" id="start-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Section -->
+      <div class="quiz-section">
+        <div class="quiz-header">
+          <h1 class="quiz-title">Discover Your Interior Design Style for 2026</h1>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-text">Question <span id="current-question">1</span> of 8</div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-container" data-question="1">
+          <h2 class="question">When you imagine your ideal living room in 2026, what do you notice first?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Tailored space with fireplace, paneling, and paired furniture.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>Clean lines, open space, very little clutter.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Color, art, and layered moments everywhere.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Natural light, wood tones, plants, cozy textures.</button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container" data-question="2">
+          <h2 class="question">Which color story feels most like "home" to you right now?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Navy, burgundy, cream – rich and grounded.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>White, soft gray, beige – calm and cohesive.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Jewel tones, terracotta, mustard – vibrant and expressive.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Sage green, warm browns, soft whites – organic and soothing.</button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container" data-question="3">
+          <h2 class="question">How do you feel about patterns and prints in your space?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>I love traditional patterns: stripes, plaids, damask.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>I prefer solid colors or very subtle textures.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Bring on the mix! Geometric, floral, global—layer them all.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Natural motifs work best: botanical prints, woven textures.</button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-container" data-question="4">
+          <h2 class="question">What's your approach to displaying personal items and collections?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Curated and symmetrical – books, heirlooms, framed photos.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>Hidden away or minimal – I like clear surfaces.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Everywhere! Shelves full of art, souvenirs, color.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Natural objects – stones, driftwood, handmade pottery.</button>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-container" data-question="5">
+          <h2 class="question">When choosing furniture, you're drawn to:</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Classic silhouettes with refined details and quality craftsmanship.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>Simple, functional pieces with clean, unadorned lines.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Statement pieces with personality – vintage finds, bold shapes.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Raw materials – live edge wood, rattan, linen upholstery.</button>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-container" data-question="6">
+          <h2 class="question">What kind of lighting makes you feel most at ease?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Elegant fixtures: chandeliers, sconces, table lamps with shades.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>Recessed and soft ambient lighting – nothing too decorative.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Sculptural fixtures, colored glass, layered and dramatic.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Warm, natural light through windows and woven pendant lamps.</button>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-container" data-question="7">
+          <h2 class="question">How do you want guests to feel when they enter your home?</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Welcomed into a space of warmth, tradition, and elegance.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>A sense of calm, clarity, and breathing room.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Inspired and energized by creativity and character.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Grounded and at peace, connected to nature.</button>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-container" data-question="8">
+          <h2 class="question">If your home had a signature scent, it would be:</h2>
+          <div class="answers">
+            <button class="answer-btn" data-answer="A"><span class="answer-label">A.</span>Leather, tobacco, aged wood – refined and nostalgic.</button>
+            <button class="answer-btn" data-answer="B"><span class="answer-label">B.</span>Fresh linen, white tea, subtle citrus – clean and pure.</button>
+            <button class="answer-btn" data-answer="C"><span class="answer-label">C.</span>Spiced fig, amber, patchouli – complex and bold.</button>
+            <button class="answer-btn" data-answer="D"><span class="answer-label">D.</span>Cedar, eucalyptus, fresh herbs – earthy and alive.</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="results">
+        <h2 id="result-title"></h2>
+        <h3 id="result-subtitle"></h3>
+        <p id="result-description"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
