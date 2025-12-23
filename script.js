@@ -1,3 +1,6 @@
+const progressBar = document.querySelector(".progress-bar");
+const progressText = document.querySelector(".progress-text");
+
 // Quiz data and state management
 const quizState = {
   currentQuestion: 1,
@@ -13,23 +16,23 @@ const quizState = {
 // Result descriptions mapped to answer keys
 const results = {
   A: {
-    title: "Classic",
+    title: "Classic Elegance",
     subtitle: "The Timeless Traditionalist",
     description: "Elegant, balanced, and enduring. Drawn to craftsmanship, tradition, and refined details. Thrives on symmetry, layered neutrals, and timeless forms.",
   },
   B: {
-    title: "Minimalist",
-    subtitle: "The Serene Sanctuary",
+    title: "Oasis of Calm",
+    subtitle: "The Serene Minimalist",
     description: "Calm, intentional, and uncluttered. Values clarity, light, and functional beauty. Thrives on open space, cohesive palettes, and simplicity.",
   },
   C: {
-    title: "Eclectic",
+    title: "Bold Eclectic",
     subtitle: "The Maximalist Haven",
     description: "Bold, expressive, and layered. Loves mixing color, pattern, and eras. Thrives on personality, creativity, and collected stories.",
   },
   D: {
-    title: "Naturalist",
-    subtitle: "The Earthy Retreat",
+    title: "The Naturalist",
+    subtitle: "The Earthy Comforts",
     description: "Grounded, warm, and organic. Drawn to natural materials and soothing spaces. Thrives on texture, light, and connection to nature.",
   },
 };
@@ -53,7 +56,9 @@ function updateProgress() {
 // Show next question or results
 function showNextQuestion() {
   const currentContainer = document.querySelector(`.question-container[data-question="${quizState.currentQuestion}"]`);
-  currentContainer.classList.remove("active");
+  if (currentContainer) {
+    currentContainer.classList.remove("active");
+  }
 
   if (quizState.currentQuestion < quizState.totalQuestions) {
     quizState.currentQuestion++;
@@ -111,14 +116,17 @@ answerButtons.forEach(button => {
   });
 });
 
-// Initialize progress bar
-updateProgress();
-
 // Handle start button click
 startBtn.addEventListener("click", function () {
   titlePage.classList.remove("active");
   quizSection.classList.add("active");
+
+  progressBar.classList.add("active");
+  progressText.classList.add("active");
+
   const firstQuestion = document.querySelector('.question-container[data-question="1"]');
   firstQuestion.classList.add("active");
+
+  updateProgress();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
